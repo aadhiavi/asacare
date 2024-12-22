@@ -1,0 +1,168 @@
+.navbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    transition: 150ms ease-in-out;
+}
+
+nav {
+    height: 60px;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: visible !important;
+    ;
+
+}
+
+.color {
+    background-color: rgb(46, 113, 114);
+    transition: 150ms ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    height: 270px;
+    padding-top: 100px;
+    transition: 150ms ease-in-out;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.logo-color {
+    background-color: rgba(46, 113, 114);
+    height: 60px;
+    transition: 150ms ease-in-out;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+nav .hamburger {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    a {
+        font-size: 19px;
+        padding: 2px 10px;
+        background: transparent;
+        border-radius: 5px;
+        transition: background ease 250ms;
+
+        &:hover {
+            background: rgb(6, 156, 6);
+            transition: ease 250ms;
+            padding: 2px 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .active {
+        background-color: rgb(241, 96, 0);
+        padding: 2px 10px;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transition: all ease-in-out 150ms;
+    }
+
+    button {
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        padding: 5px 20px;
+    }
+}
+
+@media(max-width:900px) {
+    nav {
+        width: 100%;
+        padding: 0 10px 0 0;
+
+        .hamburger {
+            display: block;
+            z-index: 99999;
+        }
+    }
+
+    .menu {
+        position: absolute;
+        height: 400px;
+        z-index: 99;
+        top: 0vh;
+        right: -100vw;
+        flex-direction: column;
+        gap: 30px;
+        width: 250px;
+        justify-content: center;
+        background-color: rgb(3, 64, 58);
+
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .logo {
+        height: 190px;
+        padding-top: 70px;
+        transition: 150ms ease-in-out;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .logo-color {
+        padding-left: 10px;
+    }
+}
+
+.booking-layer-options {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 25px;
+
+    p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        color: white;
+
+        a {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            background: transparent;
+            transition: background ease-in 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                background: rgb(255, 140, 0);
+            }
+        }
+    }
+}

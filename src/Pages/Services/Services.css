@@ -1,0 +1,99 @@
+/* src/ServicesPage.css */
+
+.services-page {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+  }
+  .services-landing-card{
+    height: 80vh;
+    width: 100%;
+    padding: 10px;
+    padding-top: 70px;
+    background-image:url(../../assets/services.jpg) ;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        color: white;
+        font-weight: 600;
+        font-size:clamp(1.4rem,2.5vw,3.5rem);
+        margin-bottom: 15px;
+    }
+    p{
+        color: rgb(209, 209, 209);
+        font-weight: 400;
+        font-size: 16px;
+
+    }
+  }
+  
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+  }
+  
+  .service-card {
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    p{
+        color: rgb(116, 116, 116);
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+
+    }
+  }
+  
+  
+  .service-card-header {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  
+  .service-icon {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  h3 {
+    font-size:clamp(1.2rem,1.5vw,2.2rem);
+    color:rgb(74,114,114);
+    font-weight: 500;
+  }
+  
+  .service-description {
+    color: #555;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  ul {
+    
+    margin-left: 20px;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    color: rgb(116, 116, 116);
+    list-style-type: disc;
+    font-size: 17px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .services-container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
