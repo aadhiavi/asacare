@@ -51,7 +51,7 @@ const Contact = () => {
     }
     
     try {
-      const response = await axios.post('http://localhost:5000/api/forms/submit', contactData);
+      const response = await axios.post('https://asaback-ld6t.onrender.com/api/forms/submit', contactData);
       if (response.status === 200) {
         console.log(contactData);
         setStatus('Form submitted successfully!');
@@ -95,7 +95,7 @@ const Contact = () => {
               <p>ASA HOME HEALTH CARE SERVICES <br />CWS ONE - MANAGED OFFICE SPACE,<br /> PLOT NO. 40, 41 & 42, <br />SURVEY NO. 54, 3rd FLOOR, <br />KONDAPUR - 500084, HYDERABAD</p>
               <p><strong>Phone:</strong> <a href="tel:+918008889648">+91 8008889648</a></p>
               <p><strong>Email:</strong> <a href="mailto:asahomehealthcare786@gmail.com">asahomehealthcare786@gmail.com</a></p>
-              <p><strong>Office Hours:</strong> Mon - SAT, 9:00 AM - 6:00 PM</p>
+              <p><strong>Office Hours:</strong> MON - SAT, 9:00 AM - 6:00 PM</p>
               <h4>
               LANDMARK:- Near Kondapur Signal, Kims Hospital, Vijay Sales 
             </h4>

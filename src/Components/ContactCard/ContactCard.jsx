@@ -51,7 +51,7 @@ const ContactCard = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/forms/submit', contactData);
+      const response = await axios.post('https://asaback-ld6t.onrender.com/api/forms/submit', contactData);
       if (response.status === 200) {
         console.log(contactData)
         setStatus('Form submitted successfully!');
